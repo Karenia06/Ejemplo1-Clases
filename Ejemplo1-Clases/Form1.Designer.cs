@@ -71,12 +71,14 @@
             this.agregarToolStripMenuItem.Name = "agregarToolStripMenuItem";
             this.agregarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.agregarToolStripMenuItem.Text = "Agregar";
+            this.agregarToolStripMenuItem.Click += new System.EventHandler(this.agregarToolStripMenuItem_Click);
             // 
             // listaDeCentrosToolStripMenuItem
             // 
             this.listaDeCentrosToolStripMenuItem.Name = "listaDeCentrosToolStripMenuItem";
             this.listaDeCentrosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.listaDeCentrosToolStripMenuItem.Text = "Lista de Centros";
+            this.listaDeCentrosToolStripMenuItem.Click += new System.EventHandler(this.listaDeCentrosToolStripMenuItem_Click);
             // 
             // profesorToolStripMenuItem
             // 
@@ -92,12 +94,14 @@
             this.agregarToolStripMenuItem1.Name = "agregarToolStripMenuItem1";
             this.agregarToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.agregarToolStripMenuItem1.Text = "Agregar";
+            this.agregarToolStripMenuItem1.Click += new System.EventHandler(this.agregarToolStripMenuItem1_Click);
             // 
             // listaDeProfesoresToolStripMenuItem
             // 
             this.listaDeProfesoresToolStripMenuItem.Name = "listaDeProfesoresToolStripMenuItem";
             this.listaDeProfesoresToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.listaDeProfesoresToolStripMenuItem.Text = "Lista de Profesores";
+            this.listaDeProfesoresToolStripMenuItem.Click += new System.EventHandler(this.listaDeProfesoresToolStripMenuItem_Click);
             // 
             // estudianteToolStripMenuItem
             // 
@@ -113,12 +117,14 @@
             this.agregarToolStripMenuItem2.Name = "agregarToolStripMenuItem2";
             this.agregarToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
             this.agregarToolStripMenuItem2.Text = "Agregar";
+            this.agregarToolStripMenuItem2.Click += new System.EventHandler(this.agregarToolStripMenuItem2_Click);
             // 
             // listaDeEstudiantesToolStripMenuItem
             // 
             this.listaDeEstudiantesToolStripMenuItem.Name = "listaDeEstudiantesToolStripMenuItem";
             this.listaDeEstudiantesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.listaDeEstudiantesToolStripMenuItem.Text = "Lista de Estudiantes";
+            this.listaDeEstudiantesToolStripMenuItem.Click += new System.EventHandler(this.listaDeEstudiantesToolStripMenuItem_Click);
             // 
             // personalToolStripMenuItem
             // 
@@ -132,14 +138,16 @@
             // agregarToolStripMenuItem3
             // 
             this.agregarToolStripMenuItem3.Name = "agregarToolStripMenuItem3";
-            this.agregarToolStripMenuItem3.Size = new System.Drawing.Size(184, 22);
+            this.agregarToolStripMenuItem3.Size = new System.Drawing.Size(183, 22);
             this.agregarToolStripMenuItem3.Text = "Agregar";
+            this.agregarToolStripMenuItem3.Click += new System.EventHandler(this.agregarToolStripMenuItem3_Click);
             // 
             // listaDeTrabajadoresToolStripMenuItem
             // 
             this.listaDeTrabajadoresToolStripMenuItem.Name = "listaDeTrabajadoresToolStripMenuItem";
-            this.listaDeTrabajadoresToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
+            this.listaDeTrabajadoresToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
             this.listaDeTrabajadoresToolStripMenuItem.Text = "Lista de Trabajadores";
+            this.listaDeTrabajadoresToolStripMenuItem.Click += new System.EventHandler(this.listaDeTrabajadoresToolStripMenuItem_Click);
             // 
             // Form1
             // 

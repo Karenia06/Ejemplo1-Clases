@@ -12,7 +12,7 @@ namespace Ejemplo1_Clases
 {
     public partial class FrmCentrocs : Form
     {
-        List<Centro> listascentros = new List<Centro>();
+        //List<Centro> listascentros = new List<Centro>();
         
         public FrmCentrocs()
         {
@@ -26,29 +26,73 @@ namespace Ejemplo1_Clases
 
         private void button1_Click(object sender, EventArgs e)
         {
-            AgregarCentro();
-            EliminarCentro();
+            if (ConNom() && ConDir() && ConTel() && ConEmail())
+            {
+                Datos.Centros.Add(new Centro(textBoxNombre.Text,textBoxDireccion.Text,textBoxTelefono.Text,textBoxEmail.Text));
+                DialogResult di = MessageBox.Show("Se han guardados los datos", "Confirmar", MessageBoxButtons.OK);
+                if(di == DialogResult.OK)
+                {
+                    textBoxNombre.Clear();
+                    textBoxDireccion.Clear();
+                    textBoxTelefono.Clear();
+                    textBoxEmail.Clear();
+                }
+
+            }
+            else
+            {
+                DialogResult d = MessageBox.Show("Llene los campos","Confirmar", MessageBoxButtons.OK);
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
-
         }
-        private void AgregarCentro()
+        private bool ConNom()
         {
-            Centro centro = new Centro();
-            centro.Nombre = textBoxNombre.Text;
-            centro.Dir = textBoxDireccion.Text;
-            listascentros.Add(centro);
-            
+            if (string.IsNullOrEmpty(textBoxNombre.Text))
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
         }
-        private void EliminarCentro()
+        private bool ConDir()
         {
-            textBoxNombre.Clear();
-            textBoxDireccion.Clear();
+            if (string.IsNullOrEmpty(textBoxDireccion.Text))
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
         }
-
+        private bool ConTel()
+        {
+            if (string.IsNullOrEmpty(textBoxTelefono.Text))
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+        private bool ConEmail()
+        {
+            if (string.IsNullOrEmpty(textBoxEmail.Text))
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
 

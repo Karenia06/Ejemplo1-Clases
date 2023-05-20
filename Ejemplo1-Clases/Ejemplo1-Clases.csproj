@@ -9,9 +9,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Ejemplo1_Clases</RootNamespace>
     <AssemblyName>Ejemplo1-Clases</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -49,6 +50,12 @@
     <Compile Include="Alumno.cs" />
     <Compile Include="Centro.cs" />
     <Compile Include="Datos.cs" />
+    <Compile Include="Estudiantes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estudiantes.Designer.cs">
+      <DependentUpon>Estudiantes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,16 +68,73 @@
     <Compile Include="FrmCentrocs.Designer.cs">
       <DependentUpon>FrmCentrocs.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmPersonal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPersonal.Designer.cs">
+      <DependentUpon>FrmPersonal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProfesor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProfesor.Designer.cs">
+      <DependentUpon>FrmProfesor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lista Estudiantes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lista Estudiantes.Designer.cs">
+      <DependentUpon>Lista Estudiantes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lista Personales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lista Personales.Designer.cs">
+      <DependentUpon>Lista Personales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListaCentros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaCentros.Designer.cs">
+      <DependentUpon>ListaCentros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Listas Profesores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Listas Profesores.Designer.cs">
+      <DependentUpon>Listas Profesores.cs</DependentUpon>
+    </Compile>
     <Compile Include="Persona.cs" />
     <Compile Include="Personal.cs" />
     <Compile Include="Profesor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Estudiantes.resx">
+      <DependentUpon>Estudiantes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCentrocs.resx">
       <DependentUpon>FrmCentrocs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPersonal.resx">
+      <DependentUpon>FrmPersonal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProfesor.resx">
+      <DependentUpon>FrmProfesor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lista Estudiantes.resx">
+      <DependentUpon>Lista Estudiantes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lista Personales.resx">
+      <DependentUpon>Lista Personales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaCentros.resx">
+      <DependentUpon>ListaCentros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Listas Profesores.resx">
+      <DependentUpon>Listas Profesores.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -80,6 +144,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
